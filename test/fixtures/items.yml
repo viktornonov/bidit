@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+selling_item:
+  title: MyString
+  description: MyText
+  start_price: 9.99
+  end_date: 2116-03-23 10:37:12
+  status: SELLING
+
+sold_item:
+  title: MyString
+  description: MyText
+  start_price: 9.99
+  end_date: 2013-03-23 10:37:12
+  status: SOLD
+
+not_sold_item:
+  title: MyString
+  description: MyText
+  start_price: 9.99
+  end_date: 2014-03-23 10:37:12
+  status: NOTSOLD

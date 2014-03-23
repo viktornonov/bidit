@@ -1,0 +1,24 @@
+<table>
+  <tbody>
+    <% @items.each do |item| %>
+      <tr class="<%= cycle('odd', 'even') %>">
+        <td>
+          <dl>
+            <dt><%= item.title %></dt>
+            <dd><%= truncate(strip_tags(item.description), length: 30) %></dd>
+          </dl>
+        </td>
+        <td><%= item.start_price %></td>
+        <td><%= item.end_date %></td>
+        <td><%= item.status %></td>
+        <td><%= link_to 'Show', item %></td>
+        <td><%= link_to 'Edit', edit_item_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item', new_item_path %>
